@@ -1,0 +1,109 @@
+.footer{
+	background: #1E212C;
+	&__top{
+		padding: 80px 0 62px;
+		display: flex;
+		column-gap: 80px;
+	}
+	&__content{
+		width: calc(28% - 64px);
+		& a:hover svg path{
+			fill: white;
+		}
+	}
+	&__text{
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 150%;
+		color: #FFFFFF60;
+		margin: 25px 0 42px;
+	}
+	&__icons{
+		display: flex;
+		column-gap: 23px;
+	}
+	&__block{
+		width: calc(12.5% - 64px);
+	}
+	&__title{
+		font-weight: 700;
+		font-size: 16px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		margin-bottom: 12px;
+	}
+	&__item{
+		cursor: pointer;
+		& a:hover{
+			color:red;
+			transition: .3s;
+		}
+		&:not(:last-child){
+			margin-bottom: 8px;
+		}
+	}
+	&__link{
+		font-weight: 400;
+		font-size: 16px;
+		color: #FFFFFF60;
+		transition: .3s;
+	}
+	&__contact{
+		width: calc(18% - 64px);
+	}
+	&__courses{
+		width: calc(29% - 64px);
+	}
+	&__email{
+		margin: 12px 0;
+		display: flex;
+		column-gap: 10px;
+		align-items: center;
+		justify-content: center;
+	}
+	&__input{
+		padding-left: 12px;
+		width: 286px;
+		height: 36px;
+		background: rgba(255, 255, 255, 0.12);
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		border-radius: 4px;
+		outline: none;
+		&:focus{
+			color: white;
+		}
+	}
+	&__btn{
+		width: 36px;
+		height: 36px;
+		background: rgba(255, 255, 255, 0.12);
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		border-radius: 4px;
+	}
+	&__subscribe{
+		font-weight: 400;
+		font-size: 10px;
+		line-height: 150%;
+		color: #FFFFFF70;
+	}
+	&__bottom{
+		padding: 18px 0 19px;
+		background: #3b4153;
+		&-text{
+			font-weight: 400;
+			font-size: 12px;
+			color: #FFFFFF;
+		}
+		&-back{
+			font-weight: 700;
+			font-size: 14px;
+			color: #FFFFFF60;
+		}
+	}
+	&__back{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+}

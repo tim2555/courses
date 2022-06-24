@@ -1,0 +1,142 @@
+.products{
+	margin-bottom: 180px;
+	&__top{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+	&__title{
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		color: #1E212C;
+		margin-bottom: 8px;
+	}
+	&__subt{
+		font-weight: 900;
+		font-size: 46px;
+		line-height: 130%;
+		color: #1E212C;
+	}
+	&__btn{
+		border-radius: 4px;
+		width: 148px;
+		height: 52px;
+		border: 1px solid #FF3F3A;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 52px;
+		letter-spacing: 0.5px;
+		background: transparent;
+		color: #FF3F3A;
+		transition: .3s;
+		cursor: pointer;
+		&:hover{
+			transition: .3s;
+			background: #FF3F3A;
+			color: white;
+		}
+	}
+	&__bottom{
+		padding-top:60px;
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 30px;
+		row-gap: 30px;
+	}
+	&__card{
+		width: calc(50% - 15px);
+		height: calc(33.33333% - 15px);
+		display: flex;
+		cursor: pointer;
+		&:hover{
+			box-shadow: 0px 10px 10px 0px #00000015;
+		}
+	}
+	&__image{
+		width: 33.33333%;
+	}
+	&__content{
+		padding-top: 33px;
+		padding-left: 32px;
+		width: 66.66666%;
+	}
+
+	&__badge1{
+		width: 80px;
+		background: #03CEA4;
+	}
+	&__badge2{
+		width: 98px;
+		background: #5A87FC;
+	}
+	&__badge3{
+		width: 111px;
+		background: #F89828;
+	}
+	&__badge4{
+		width: 80px;
+		background: #03CEA4;
+	}
+	&__badge5{
+		width: 98px;
+		background: #5A87FC;
+	}
+	&__badge6{
+		width: 59px;
+		background: #F52F6E;
+	}
+	.badge{
+		height: 23px;
+		padding: 0 8px;
+		color: white;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 150%;
+		border-radius: 4px;
+	}
+	&__course{
+		margin-top: 21px;
+	}
+	&__title{
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 150%;
+		color: #1E212C;
+	}
+	&__price{
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 150%;
+		color: #787A80;
+		padding-left: 14px;
+		position: relative;
+
+		&-color{
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 150%;
+			color: #FF4242;
+			margin-right: 16px;
+			position: relative;
+			&::before{
+				position: absolute;
+				content: '$';
+				top: 0;
+				left: -10px;
+				transform: translate(-30%,-15%);
+			}
+			&::after{
+			position: absolute;
+			content: '|';
+			color: #787A80;
+			top: 0;
+			right: -8px;
+			transform: translate(90%,-15%);
+			}
+		}
+	}
+}
+

@@ -1,0 +1,49 @@
+.contact-info{
+	padding: 152px 0 180px;
+	&__content{
+		display: flex;
+		column-gap: 130px;
+		flex-wrap: wrap;
+	}
+	&__left{
+		width: calc(40% - 65px)
+	}
+	&__right{
+		width: calc(60% - 65px)
+	}
+	&__text{
+		@include text(bold, 16px, 150%, $blue);
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+	&__title{
+		@include text(900, 46px, 130%, $blue);
+		margin: 8px 0 40px;
+	}
+	&__list{
+		display: flex;
+		flex-direction: column;
+		row-gap: 17px;
+	}
+	&__item{
+		display: flex;
+		column-gap: 17px;
+		&-title{
+			@include text(bold, 14px, 150%, #787A80);
+		}
+		&-link{
+			@include text(normal, 18px, 150%, $blue);
+		}
+	}
+	&__follow{
+		margin: 48px 0 25px;
+		@include text(bold, 16px, 150%, $blue);
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+	&__social{
+		display: flex;
+		column-gap: 35px;
+		align-items:center;
+	}
+}

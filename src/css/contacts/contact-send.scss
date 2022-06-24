@@ -1,0 +1,84 @@
+.contact-send{
+	padding-bottom: 180px;
+	&__content{
+		display: flex;
+		column-gap: 105px;
+	}
+	&__left{
+		width: calc(35% - 52.5px);
+		& img{
+			width: 100%;
+		}
+	}
+	&__right{
+		width: calc(65% - 52.5px);
+	}
+
+	&__title{
+		@include text(bold, 16px, 150%, $blue);
+		font-weight: 700;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+	&__subtitle{
+		@include text(900, 46px, 130%, $blue);
+		margin: 8px 0 40px;
+	}
+	&__form{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 25px;
+	}
+	&__item{
+		width: calc(50% - 12.5px);
+	}
+	&__text{
+		display: inline-block;
+		@include text(normal, 16px, 160%, $grey);
+		margin-bottom: 8px;
+	}
+	&__field{
+		@include text(normal, 16px, 160%, #9A9CA5);
+		width: 340px;
+		height: 52px;
+		background: #FFFFFF;
+		border: 1px solid #D7DADD;
+		border-radius: 4px;
+		outline: none;
+		padding-left: 16px;
+	}
+	&__area{
+		width: 100%;
+	}
+	&__textarea{
+		height: 128px;
+		width: 100%;
+		outline: none;
+		padding: 13px 0 0 16px;
+		border: 1px solid #D7DADD;
+		border-radius: 4px;
+		resize: none;
+	}
+	&__end{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		&-left{
+			display: flex;
+			align-items: flex-start;
+			column-gap: 15px;
+		}
+	}
+	&__check{
+		&-text{
+			@include text(normal, 16px, 160%, $grey);
+			&:hover{
+				cursor: pointer;
+			}
+		}
+	}
+	&__btn{
+		width: 340px;
+		height: 52px;
+	}
+}

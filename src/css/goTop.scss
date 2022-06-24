@@ -1,0 +1,16 @@
+.goTop{
+	position: fixed;
+	bottom: 150px;
+	right: 40px;
+	background: $red;
+	color: white;
+	padding: 15px;
+	z-index: -10;
+	opacity: 0;
+	transition: .3s;
+	&__active{
+		transition: .3s;
+		opacity: 1;
+		z-index: 10
+	}
+}
